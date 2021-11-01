@@ -13,16 +13,16 @@ const sendWelcomeMail = (email, name) => {
     from: process.env.USER,
     to: email,
     subject: "Thanks for joining us",
-    html: `<h1>welcome to task manager app ,${name}, I hope you your time here ,and let us know if you like this app</h1>`
+    html: `<h1 style="color: #90EE90;">welcome to task manager app ,${name}, I hope you your time here ,and let us know if you like this app</h1>`
   })
 }
 
 const sendCancelingMail = (email, name) => {
   transporter.sendMail({
-    from: process.enc.USER,
+    from: process.env.USER,
     to: email,
     subject: "Sorry to see you go!",
-    html: `<h1>Goodbye ,${name}, I hope to see you back sometime again</h1>`
+    html: `<h1 style="color: red;">Goodbye ,${name}, I hope to see you back sometime again</h1>`
   })
 }
 
