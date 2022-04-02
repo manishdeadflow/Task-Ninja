@@ -11,6 +11,6 @@ app.use(userRouter);
 app.use(taskRouter);
 
 app.listen(port, () => {
-  console.log("server is up");
+  console.log(`server is connected on the port ${port}`);
 });
 
